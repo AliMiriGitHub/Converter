@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "Services";
+
+package convert;
+
+// The converting service definition.
+service Converter {
+  // Converting currency from number to word.
+  rpc ConvertToWord (ConvertRequest) returns (ConvertReply);
+}
+
+// The request message containing the amount.
+message ConvertRequest {
+  string amount = 1;
+}
+
+// The response message containing the description.
+message ConvertReply {
+  string description = 1;
+}

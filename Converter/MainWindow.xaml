@@ -1,0 +1,16 @@
+﻿<Window x:Class="Converter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Converter"
+        mc:Ignorable="d"
+        Title="Converter" Height="300" Width="600" ResizeMode="NoResize">
+    <Grid Height="284" VerticalAlignment="Top">
+        <TextBox x:Name="txtNumber"  HorizontalAlignment="Left" Margin="166,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" TextChanged="Number_TextChanged" Height="20"/>
+        <Label Content="Enter Number :" HorizontalAlignment="Left" Margin="50,50,0,0" VerticalAlignment="Top"/>
+        <TextBlock  x:Name="txtResult" HorizontalAlignment="Left" Margin="110,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="447" Height="50                    "/>
+        <Label Content="Result :" HorizontalAlignment="Left" Margin="52,103,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txtStatus" HorizontalAlignment="Left" Margin="14,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="570" Height="20"/>
+    </Grid>
+</Window>
